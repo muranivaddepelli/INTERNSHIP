@@ -14,7 +14,10 @@ function Login() {
         e.preventDefault();
         console.log(email,password);
         signInWithEmailAndPassword(auth,email,password)
-        .then(()=>navigate("/dashboard"))
+        .then(()=>{navigate("/dashboard") 
+         setEmail(''),
+        setPassword('')
+          })
         .catch((err)=>alert(err))
         }
     
