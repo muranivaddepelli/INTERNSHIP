@@ -6,7 +6,7 @@ import {Line,Bar} from 'react-chartjs-2'
 import { Chart as ChartJS,LineElement,BarElement,CategoryScale,LinearScale,PointElement } from 'chart.js';
 ChartJS.register(LineElement, BarElement, CategoryScale, LinearScale, PointElement);
 
-function Header() {
+function Content() {
   return (
     <div className='grow p-8'>
       <h2 className='text-2xl mb-4'>Dashboard</h2>
@@ -30,4 +30,4 @@ function Header() {
   )
 }
 
-export default Header;
+export default Content;
