@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { Link,useNavigate } from 'react-router-dom';
 import { app } from '../firebase/firebase.config';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import {FaHandPointLeft} from 'react-icons/fa'
 
 function Login() {
     const [email,setEmail]=useState("");
@@ -40,7 +41,7 @@ function Login() {
            </div>
            <button type='submit' onClick={handleLogin} className='w-full bg-blue-500 text-black py-2 rounded-xl hover:bg-blue-600 transition duration-200'>Login</button>
            <button type='button' onClick={handleSignUp} className='w-full bg-blue-500 text-black py-2 rounded-xl hover:bg-blue-600 transition duration-200'>SignUp</button>
-           <p className='flex items-center justify-center'>New User, <Link to="/signup" className="text-white text-xl underline">SignUp</Link></p>
+           <p className='flex items-center justify-center'>New User, <Link to="/signup" className="text-white text-xl underline mr-2 ml-2">SignUp</Link><FaHandPointLeft/></p>
         </form>
 
     </div>
